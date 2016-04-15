@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Broadway</title></head><body>
+<h1><a id="Broadway_the_road_to_10_0"></a>Broadway, the road to 1.0</h1>
+<p>Little over 1.5 years ago we <a href="http://labs.qandidate.com/blog/2014/08/26/broadway-our-cqrs-es-framework-open-sourced/">open sourced</a> <a href="https://github.com/qandidate-labs/broadway">broadway</a>, bringing CQRS and Event Sourcing to PHP. At the time not many engineers known to us in the PHP community were deploying CQRS\ES applications in production and we decided to open up our lessons learned to others. Today we are humbled to know that broadway is used in production in many places other than <a href="http://qandidate.com/">Qandidate.com</a>. With that in mind we want to share our current plan to reach v1.0.0.</p>
+<p>Our high level goals are:</p>
+<ul>
+<li>show the world that the broadway codebase is stable (it is!)</li>
+<li>become more open for other community members to step in</li>
+</ul>
+<p>With the uptake of broadway being used in production, other companies have invested in their own related implementations and tooling. Some of those projects have shown interest in becoming “official” broadway components. As the broadway project matures we want to provide the ability for those projects to continue under the broadway umbrella.</p>
+<p>We hope the above gives context for the following changes:</p>
+<ul>
+<li><strong>Moving broadway to the broadway GitHub organisation</strong> Over time the composition of the broadway core team never changed, but not everyone works at the company where it all started anymore. In the past year the project has been a community driven project more than anything and in that light we are going to move broadway to the <a href="https://github.com/broadway">broadway GitHub organisation</a>. It will also make it easier to adopt related projects under the broadway umbrella.</li>
+<li><strong>Splitting out the Symfony bundle</strong> The Symfony bundle currently lives in the main broadway repository. We are going to make it a standalone project and encourage other framework integrations (Zend, Laravel, …) to be published under the broadway umbrella if maintainers wish to do so.</li>
+<li><strong>Splitting out implementations</strong> Down the line the core of broadway will be leaner, providing the base interfaces, testing helpers and storage agnostic business logic. The DBAL event store component will move to its own repository.</li>
+</ul>
+<p>We are planning to move the project and split the bundle before the end of this month. After all implementations are split out as well we think broadway is ready for v1.0.0! If you have any feedback or questions, please reach out to us in #qandidate on freenode.</p>
+<p>Let’s write some history!</p>
+<p><a href="https://github.com/wjzijderveld">Willem-Jan</a>, <a href="https://github.com/othillo">Sander</a> and <a href="https://github.com/asm89">Alexander</a></p>
+
+</body></html>
