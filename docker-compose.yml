@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  jekyll:
+    image: "jekyll/jekyll:4"
+    command: "jekyll serve"
+    volumes:
+      - ".:/srv/jekyll"
+    ports:
+      - "4000:4000"
+  npm:
+    image: "node:16.3-alpine"
+    volumes:
+      - ".:/app"
+    working_dir: "/app"
+    command: "npm install"
+  tailwind:
+    image: "node:16.3-alpine"
+    volumes:
+      - ".:/app"
+    working_dir: "/app"
+    command: "npx tailwindcss --input assets/index.css --output dist/index.css --watch"

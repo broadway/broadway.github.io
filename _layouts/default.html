@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/dist/index.css">
+    <title>{{ page.title }}</title>
+</head>
+<body class="min-h-screen min-w-full pt-12 font-sans leading-normal bg-white">
+    <div class="h-16 fixed z-10 top-0 w-screen bg-white p-5">
+        <nav class="flex justify-between">
+            <div>
+                <a href="/">Broadway</a>
+            </div>
+            <ul class="flex flex-row">
+                <li class="pr-5"><a href="https://github.com/broadway">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="lg:flex">
+        <nav id="main" class="lg:w-auto p-5 w-fullfixed lg:relative flex-no-shrink min-h-screen hidden lg:block leading-loose">
+            <menu class="p-0 mt-0">
+                <ul class="list-reset mb-8">
+                    <li>
+                        <a href="/">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="/installation/">Installation</a>
+                    </li>
+                    <li>
+                        <a href="/snapshotting/">Snapshotting</a>
+                    </li>
+                    <li>
+                        <a href="/replaying/">Replaying</a>
+                    </li>
+                    <li>
+                        <a href="/sagas/">Sagas</a>
+                    </li>
+                    <li>
+                        <a href="/async/">Asynchronous</a>
+                    </li>
+                    <li>
+                        <a href="/serializing/">Serializing</a>
+                    </li>
+                </ul>
+            </menu>
+        </nav>
+        <div id="content" class="flex-grow lg:block">
+            <article class="max-w-3xl mx-auto px-5 py-5">
+                {{ content }}
+            </article>
+        </div>
+    </main>
+</body>
+</html>

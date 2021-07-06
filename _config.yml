@@ -1,1 +1,11 @@
-theme: jekyll-theme-minimal
+defaults:
+  -
+    scope:
+      path: "pages"
+    values:
+      layout: "default"
+
+exclude:
+  - "docker-compose.yml"
+
+highlighter: rouge

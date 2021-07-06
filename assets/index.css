@@ -1,0 +1,32 @@
+/* https://tailwindcss.com/docs/installation#include-tailwind-in-your-css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-4xl;
+        @apply text-green-700;
+    }
+    h2 {
+        @apply text-2xl;
+        @apply text-green-700;
+    }
+    h3 {
+        @apply text-xl;
+        @apply text-green-700;
+    }
+
+    a {
+        @apply text-green-700;
+    }
+}
+
+article p {
+    @apply mb-5;
+}
+
+article ul {
+    @apply list-disc;
+    @apply list-inside;
+}
